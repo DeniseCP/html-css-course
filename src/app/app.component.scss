@@ -1,0 +1,31 @@
+:host /deep/{
+    .container{
+        background: #f2f2f2;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mat-raised-button.mat-primary{
+        background: #D94625;
+        &:hover{
+            border: 1px double #F2622E;
+            color: #F2622E;
+            background: #f2f2f2;
+        }
+    }
+
+    .img-container{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .img-responsive{
+        max-width: 100%;
+    }
+
+    .img-transform{
+        transform: scale(0.5);
+    }
+}
